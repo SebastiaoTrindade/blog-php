@@ -20,14 +20,13 @@
         <a href="<?php $BASE_URL ?>" id="logo">
             <img src="<?php $BASE_URL ?>/img/logo.svg" alt="Blog Tech Logo">
         </a>
-        <div class="container">
-            <h1>Blog Tech</h1>
+        <div class="container">            
             <nav>
                 <ul id="navbar">
-                    <li><a href="<?php $BASE_URL ?>/index.php">Home</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="<?php $BASE_URL ?>/contato.php">Contato</a></li>
+                    <li><a href="<?php $BASE_URL ?>/index.php" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Categorias</a></li>
+                    <li><a href="#" class="nav-link">Sobre</a></li>
+                    <li><a href="<?php $BASE_URL ?>/contato.php" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
         </div>
