@@ -52,6 +52,13 @@ main{
     color: #999;
 }
 
+/* Home */
+#title-container{
+    min-height: 500px;    
+    text-align: center;
+    margin-top: 30px;
+}
+
 /* FOOTER */
 footer{
     width: 100%;
