@@ -38,25 +38,26 @@
             Nisi quae aperiam omnis, voluptatum tempora odit! Autem consequatur odio aliquid laborum odit laboriosam veritatis consequuntur accusantium voluptate, ipsum rem sed quisquam quod nulla atque fugiat ex suscipit voluptatibus quia.
         </p>
     </div>
+    <aside id="nav-container">
+        <h3 id="tags-title">Tags</h3>
+        <ul ids="tag-list">
+            <?php foreach($currentPost['tags'] as $tag): ?>
+                <li>
+                    <a href="#"><?= $tag ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+        <h3 id="categories-title">Categorias</h3>
+        <ul id="categories-list">
+            <?php foreach($categories as $category): ?>
+                <li>
+                    <a href="#"><?= $category ?></a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </aside>
 </main>
-<aside id="nav-container">
-    <h3 id="tags-title">Tags</h3>
-    <ul ids="tag-list">
-        <?php foreach($currentPost['tags'] as $tag): ?>
-            <li>
-                <a href="#"><?= $tag ?></a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-    <h3 id="categories-title">Categorias</h3>
-    <ul id="categories-list">
-        <?php foreach($categories as $category): ?>
-            <li>
-                <a href="#"><?= $category ?></a>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-</aside>
+
 
 <?php
     include_once('templates/footer.php');
